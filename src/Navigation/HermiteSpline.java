@@ -1,4 +1,4 @@
-package Navigation;
+package frcsplines;
 import java.util.ArrayList;
 public class HermiteSpline implements Spline{
 	

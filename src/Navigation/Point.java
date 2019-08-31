@@ -1,4 +1,4 @@
-package Navigation;
+package frcsplines;
 
 public class Point {
 	
