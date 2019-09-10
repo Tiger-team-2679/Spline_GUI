@@ -25,7 +25,7 @@ public class Example2 {
             System.out.println("Left speed: " + ves[1] + "\n");
         }
 
-        vs.saveCSV(toSave, "src/velocities.csv");
+        vs.saveCSV(vs.getMaxVelocities(100), "x", "src/velocities.csv");
 
     }
 

@@ -151,10 +151,10 @@ public class VelocitiesAdapter {
         return rPoints.size();
     }
 
-    public void saveCSV(double[][] ves, String path){
+    public void saveCSV(double[][] ves, String labels, String path){
         try {
             Formatter formatter = new Formatter(path + (path.endsWith(".csv")?"":".csv"));
-            formatter.format("%s", "Right Speed, Left Speed\r\n");
+            formatter.format("%s", labels + "\r\n");
             for (int i = 0; i<ves.length; i++) {
                 formatter.format("%s", ves[i][0] + ", " + ves[i][1] + "\r\n");
             }
@@ -162,6 +162,38 @@ public class VelocitiesAdapter {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public void saveCSV(double[] ves, String label, String path){
+        try {
+            Formatter formatter = new Formatter(path + (path.endsWith(".csv")?"":".csv"));
+            formatter.format("%s", label + "\r\n");
+            for (int i = 0; i<ves.length; i++) {
+                if(i % 4 == 0)
+                    formatter.format("%s", ves[i] + "\r\n");
+            }
+            formatter.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Get the maximum robot velocity at each point depending on the motor maximum possible velocity.
+     * @param motorMaxVelocity
+     * @return
+     */
+    public double[] getMaxVelocities(double motorMaxVelocity){
+        double[] maxVelocities = new double[getNumPoints()-1];
+        for (int i = 0; i<maxVelocities.length; i++){
+            double[] ds = {calculate_distance_between_points(rPoints.get(i), rPoints.get(i+1)),
+                    calculate_distance_between_points(lPoints.get(i), lPoints.get(i+1))};
+            int longI = ds[0] > ds[1]?0:1;
+            double t = ds[longI] / motorMaxVelocity;
+            double v2 = ds[1 - longI] / t;
+            maxVelocities[i] = (motorMaxVelocity + v2) / 2;
+        }
+        return maxVelocities;
     }
 
     public int[] iterate(){

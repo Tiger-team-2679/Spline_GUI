@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c42287c1-fa55-4b24-a305-d9a77a476dc9" name="Default Changelist" comment="" />
+    <list default="true" id="c42287c1-fa55-4b24-a305-d9a77a476dc9" name="Default Changelist" comment="Add motorMaxVelocities function to calculate the max possible velocities based on single motor max velocity.">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FRCProject/frcsplines/Example2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FRCProject/frcsplines/Example2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FRCProject/frcsplines/VelocitiesAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FRCProject/frcsplines/VelocitiesAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FRCProject/frcsplines/points.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FRCProject/frcsplines/points.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FRCProject/velocities.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FRCProject/velocities.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frcsplines/Example2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frcsplines/Example2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frcsplines/VelocitiesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frcsplines/VelocitiesAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frcsplines/points.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/frcsplines/points.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/velocities.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/velocities.csv" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1QSwhJWjMqCkGS5FtCFROilqt4U" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FRC" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/staff" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -101,7 +125,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567777422604</updated>
+      <workItem from="1567954583292" duration="213000" />
+      <workItem from="1567954817859" duration="3980000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add motorMaxVelocities function to calculate the max possible velocities based on single motor max velocity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add motorMaxVelocities function to calculate the max possible velocities based on single motor max velocity." />
   </component>
 </project>
